@@ -37,6 +37,7 @@ Just extract the `.zip` file and run the `.exe` — simple, fast, and ready to g
 
 <img width="557" height="616" alt="image" src="https://github.com/user-attachments/assets/0ad49e18-359e-4dcc-9966-df676aee1d7a" />
 
+<img width="1146" height="698" alt="image" src="https://github.com/user-attachments/assets/ecbde6d9-103d-422e-be4e-10814ef7b4e6" />
 
 ---
 
