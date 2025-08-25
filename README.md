@@ -3,6 +3,13 @@
 A modern, designer-friendly Windows app for customizing your CS2 server experience.  
 Ping, filter, and firewall Steam Datagram Relay (SDR) regions with intuitive controls, emoji-enhanced feedback, and dynamic recommendations.
 
+## 📥 Want to Download It?
+
+Grab the latest release here:  
+👉 [CS2 Server Picker v1.0.0](https://github.com/baardie/CS2ServerPicker/releases/tag/v1.0.0)
+
+Just extract the `.zip` file and run the `.exe` — simple, fast, and ready to go!
+
 ---
 
 ## ✨ Features
