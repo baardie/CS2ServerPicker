@@ -102,7 +102,7 @@ If you'd like to add new presets, improve animations, or refactor ping logic, fe
 
 ## 📄 License
 
-MIT License — free to use, modify, and distribute.
+GPL-3.0 license
 
 ---
 
