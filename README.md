@@ -75,6 +75,23 @@ Firewall rules are scoped to CS2 relay IPs only.
 
 ---
 
+## 🔧 TODO
+
+- [ ] **Custom User Presets**  
+  Allow users to define and save their own region combinations.  
+  - UI: Add a “Custom” radio group with editable region checkboxes  
+  - UX: Persist selections across sessions using local config or registry  
+  - Feedback: Highlight custom presets with a subtle accent color or emoji
+
+- [ ] **Ping Analysis & Recommendations**  
+  Measure live ping to all regions and suggest optimal choices dynamically.  
+  - Logic: Implement async ping sweep with timeout handling  
+  - UI: Display recommended region with animated pulse or fade-in  
+  - UX: Show “Best Match” label with confidence score or emoji indicator  
+  - Performance: Ensure zero UI freezing during pinging
+    
+---
+
 ## 🧩 Contributing
 
 Pull requests are welcome!  
