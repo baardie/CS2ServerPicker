@@ -33,7 +33,10 @@ Just extract the `.zip` file and run the `.exe` — simple, fast, and ready to g
 
 ## 🖼️ Screenshots
 
-> Coming soon — animated previews of region selection, ping feedback, and firewall application.
+<img width="1156" height="710" alt="image" src="https://github.com/user-attachments/assets/468a7e84-700f-41b0-ad1e-df71004cfd68" />
+
+<img width="557" height="616" alt="image" src="https://github.com/user-attachments/assets/0ad49e18-359e-4dcc-9966-df676aee1d7a" />
+
 
 ---
 
@@ -82,9 +85,7 @@ Firewall rules are scoped to CS2 relay IPs only.
 
 ---
 
-## 🔧 TODO
-- [ ] ** Add release to github (its 5am atm)
-    
+## 🔧 TODO   
 - [ ] **Custom User Presets**  
   Allow users to define and save their own region combinations.  
   - UI: Add a “Custom” radio group with editable region checkboxes  
@@ -126,7 +127,8 @@ If you’ve enjoyed using one of them, consider fueling future updates — in co
 Your donation helps cover maintenance, midnight coding sessions, and the occasional espresso-powered breakthrough.  
 Thanks for being part of the journey 💙
 
-[![Buy Me a Coffee](https://github.com/baardie/CS2ServerPicker/blob/master/donation.png?raw=true)](https://www.paypal.com/donate/?business=96PVNH58EAZXJ&no_recurring=0&item_name=Your+donation+helps+cover+occasional+caffeine-fueled+midnight+sessions%21+%0AThanks+for+being+part+of+the+journey+%F0%9F%92%99&currency_code=GBP)
+[![Buy Me a Coffee](https://github.com/user-attachments/assets/dde30a99-b6fa-462c-b081-cf4e77265cda?raw=true)](https://www.paypal.com/donate/?business=96PVNH58EAZXJ&no_recurring=0&item_name=Your+donation+helps+cover+occasional+caffeine-fueled+midnight+sessions%21+%0AThanks+for+being+part+of+the+journey+%F0%9F%92%99&currency_code=GBP)
+
 
 
 
