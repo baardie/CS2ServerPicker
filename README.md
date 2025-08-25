@@ -93,6 +93,13 @@ MIT License — free to use, modify, and distribute.
 Built with care by [baardie](https://github.com/baardie),  
 a creative technologist blending systems-level engineering with delightful UI design.
 
-[![Buy Me a Coffee](https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Coffee_cup_icon.svg/120px-Coffee_cup_icon.svg.png)](https://www.paypal.com/donate/?business=96PVNH58EAZXJ&no_recurring=0&item_name=Your+donation+helps+cover+occasional+caffeine-fueled+midnight+sessions%21+%0AThanks+for+being+part+of+the+journey+%F0%9F%92%99&currency_code=GBP)
+## ☕ Fuel My Future Updates
+
+I craft small, thoughtful apps with a focus on clarity, performance, and user delight. If you’ve enjoyed using one of them, consider fueling future updates — in coffee!
+
+Your donation helps cover maintenance, midnight coding sessions, and the occasional espresso-powered breakthrough.  
+Thanks for being part of the journey 💙
+
+[![Buy Me a Coffee](https://img.icons8.com/emoji/96/coffee-emoji.png)](https://www.paypal.com/donate/?business=96PVNH58EAZXJ&no_recurring=0&item_name=Your+donation+helps+cover+occasional+caffeine-fueled+midnight+sessions%21+%0AThanks+for+being+part+of+the+journey+%F0%9F%92%99&currency_code=GBP)
 
 
