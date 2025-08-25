@@ -41,7 +41,7 @@ Ping, filter, and firewall Steam Datagram Relay (SDR) regions with intuitive con
 ### Build Instructions
 
 1. Clone the repo  
-   `git clone https://github.com/yourusername/cs2-server-picker.git`
+   `git clone https://github.com/baardie/cs2-server-picker.git`
 
 2. Open in Visual Studio  
    Ensure NuGet packages are restored and build the solution.
@@ -90,6 +90,6 @@ MIT License — free to use, modify, and distribute.
 
 ## 🙌 Credits
 
-Built with care by [Luke](https://github.com/yourusername),  
+Built with care by [baardie](https://github.com/baardie),  
 a creative technologist blending systems-level engineering with delightful UI design.
 
