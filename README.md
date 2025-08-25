@@ -93,3 +93,6 @@ MIT License — free to use, modify, and distribute.
 Built with care by [baardie](https://github.com/baardie),  
 a creative technologist blending systems-level engineering with delightful UI design.
 
+[![Buy Me a Coffee](https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Coffee_cup_icon.svg/120px-Coffee_cup_icon.svg.png)](https://www.paypal.com/donate/?business=96PVNH58EAZXJ&no_recurring=0&item_name=Your+donation+helps+cover+occasional+caffeine-fueled+midnight+sessions%21+%0AThanks+for+being+part+of+the+journey+%F0%9F%92%99&currency_code=GBP)
+
+
