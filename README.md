@@ -76,7 +76,8 @@ Firewall rules are scoped to CS2 relay IPs only.
 ---
 
 ## 🔧 TODO
-
+- [ ] ** Add release to github (its 5am atm)
+    
 - [ ] **Custom User Presets**  
   Allow users to define and save their own region combinations.  
   - UI: Add a “Custom” radio group with editable region checkboxes  
