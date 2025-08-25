@@ -24,6 +24,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             bindingSource = new BindingSource(components);
             btnApply = new Button();
             btnUnblock = new Button();
@@ -53,7 +54,8 @@
             // 
             // btnApply
             // 
-            btnApply.Location = new Point(20, 394);
+            btnApply.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            btnApply.Location = new Point(23, 532);
             btnApply.Name = "btnApply";
             btnApply.Size = new Size(100, 40);
             btnApply.TabIndex = 1;
@@ -62,7 +64,8 @@
             // 
             // btnUnblock
             // 
-            btnUnblock.Location = new Point(397, 394);
+            btnUnblock.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            btnUnblock.Location = new Point(400, 532);
             btnUnblock.Name = "btnUnblock";
             btnUnblock.Size = new Size(120, 40);
             btnUnblock.TabIndex = 2;
@@ -182,7 +185,7 @@
             cardPanel1.Controls.Add(btnClearAllowed);
             cardPanel1.Location = new Point(12, 12);
             cardPanel1.Name = "cardPanel1";
-            cardPanel1.Size = new Size(541, 459);
+            cardPanel1.Size = new Size(541, 596);
             cardPanel1.TabIndex = 8;
             // 
             // chkBlockAllButSelected
@@ -246,12 +249,16 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(224, 224, 224);
+            BackColor = Color.FromArgb(64, 64, 64);
             ClientSize = new Size(1156, 678);
             Controls.Add(gridRegions);
             Controls.Add(cardPanel1);
             Controls.Add(bottomPanel);
+            FormBorderStyle = FormBorderStyle.Fixed3D;
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            MaximizeBox = false;
             Name = "MainForm";
+            SizeGripStyle = SizeGripStyle.Hide;
             StartPosition = FormStartPosition.CenterScreen;
             Text = "CS2 Server Picker (.NET 9)";
             ((System.ComponentModel.ISupportInitialize)bindingSource).EndInit();
