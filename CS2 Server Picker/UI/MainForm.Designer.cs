@@ -24,6 +24,8 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             bindingSource = new BindingSource(components);
             btnApply = new Button();
@@ -55,26 +57,39 @@
             // btnApply
             // 
             btnApply.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            btnApply.Location = new Point(23, 532);
+            btnApply.BackColor = Color.FromArgb(255, 140, 0);
+            btnApply.FlatAppearance.BorderSize = 0;
+            btnApply.FlatStyle = FlatStyle.Flat;
+            btnApply.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            btnApply.ForeColor = Color.White;
+            btnApply.Location = new Point(23, 526);
             btnApply.Name = "btnApply";
             btnApply.Size = new Size(100, 40);
             btnApply.TabIndex = 1;
             btnApply.Text = "Apply";
-            btnApply.UseVisualStyleBackColor = true;
+            btnApply.UseVisualStyleBackColor = false;
             // 
             // btnUnblock
             // 
             btnUnblock.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            btnUnblock.Location = new Point(400, 532);
+            btnUnblock.BackColor = Color.FromArgb(40, 40, 40);
+            btnUnblock.FlatAppearance.BorderColor = Color.FromArgb(255, 140, 0);
+            btnUnblock.FlatAppearance.BorderSize = 2;
+            btnUnblock.FlatStyle = FlatStyle.Flat;
+            btnUnblock.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            btnUnblock.ForeColor = Color.White;
+            btnUnblock.Location = new Point(366, 526);
             btnUnblock.Name = "btnUnblock";
             btnUnblock.Size = new Size(120, 40);
             btnUnblock.TabIndex = 2;
             btnUnblock.Text = "Unblock All";
-            btnUnblock.UseVisualStyleBackColor = true;
+            btnUnblock.UseVisualStyleBackColor = false;
             // 
             // cmbPresets
             // 
+            cmbPresets.BackColor = Color.FromArgb(35, 35, 35);
             cmbPresets.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbPresets.ForeColor = Color.White;
             cmbPresets.FormattingEnabled = true;
             cmbPresets.IntegralHeight = false;
             cmbPresets.Location = new Point(23, 319);
@@ -84,7 +99,7 @@
             // 
             // bottomPanel
             // 
-            bottomPanel.BackColor = Color.FromArgb(223, 223, 223);
+            bottomPanel.BackColor = Color.FromArgb(25, 25, 25);
             bottomPanel.BorderStyle = BorderStyle.FixedSingle;
             bottomPanel.Controls.Add(lblStatus);
             bottomPanel.Controls.Add(progressBarLoading);
@@ -98,6 +113,8 @@
             // 
             lblStatus.Anchor = AnchorStyles.Top;
             lblStatus.BackColor = Color.Transparent;
+            lblStatus.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            lblStatus.ForeColor = Color.FromArgb(255, 140, 0);
             lblStatus.Location = new Point(-1, 0);
             lblStatus.Name = "lblStatus";
             lblStatus.Size = new Size(1156, 24);
@@ -107,21 +124,24 @@
             // 
             // progressBarLoading
             // 
+            progressBarLoading.BackColor = Color.FromArgb(40, 40, 40);
             progressBarLoading.Dock = DockStyle.Bottom;
+            progressBarLoading.ForeColor = Color.FromArgb(255, 140, 0);
             progressBarLoading.Location = new Point(0, 27);
             progressBarLoading.Name = "progressBarLoading";
             progressBarLoading.Size = new Size(1154, 24);
-            progressBarLoading.Style = ProgressBarStyle.Marquee;
+            progressBarLoading.Style = ProgressBarStyle.Continuous;
             progressBarLoading.TabIndex = 5;
             // 
             // grpRecommended
             // 
             grpRecommended.BackColor = Color.Transparent;
             grpRecommended.Controls.Add(flowRecommended);
-            grpRecommended.Font = new Font("Segoe UI Emoji", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            grpRecommended.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            grpRecommended.ForeColor = Color.White;
             grpRecommended.Location = new Point(20, 21);
             grpRecommended.Name = "grpRecommended";
-            grpRecommended.Size = new Size(500, 170);
+            grpRecommended.Size = new Size(466, 170);
             grpRecommended.TabIndex = 8;
             grpRecommended.TabStop = false;
             grpRecommended.Text = "Recommended Regions";
@@ -129,43 +149,63 @@
             // flowRecommended
             // 
             flowRecommended.AutoSize = true;
+            flowRecommended.BackColor = Color.Transparent;
             flowRecommended.Dock = DockStyle.Fill;
             flowRecommended.FlowDirection = FlowDirection.TopDown;
-            flowRecommended.Location = new Point(3, 19);
+            flowRecommended.Location = new Point(3, 21);
             flowRecommended.Name = "flowRecommended";
-            flowRecommended.Size = new Size(494, 148);
+            flowRecommended.Size = new Size(460, 146);
             flowRecommended.TabIndex = 0;
             // 
             // btnRefreshRegions
             // 
+            btnRefreshRegions.BackColor = Color.FromArgb(40, 40, 40);
+            btnRefreshRegions.FlatAppearance.BorderColor = Color.FromArgb(255, 140, 0);
+            btnRefreshRegions.FlatAppearance.BorderSize = 2;
+            btnRefreshRegions.FlatStyle = FlatStyle.Flat;
+            btnRefreshRegions.Font = new Font("Segoe UI", 10F);
+            btnRefreshRegions.ForeColor = Color.White;
             btnRefreshRegions.Location = new Point(149, 197);
             btnRefreshRegions.Name = "btnRefreshRegions";
-            btnRefreshRegions.Size = new Size(120, 40);
+            btnRefreshRegions.Size = new Size(151, 40);
             btnRefreshRegions.TabIndex = 7;
             btnRefreshRegions.Text = "Refresh Regions";
-            btnRefreshRegions.UseVisualStyleBackColor = true;
+            btnRefreshRegions.UseVisualStyleBackColor = false;
             // 
             // btnSortPing
             // 
+            btnSortPing.BackColor = Color.FromArgb(40, 40, 40);
+            btnSortPing.FlatAppearance.BorderColor = Color.FromArgb(255, 140, 0);
+            btnSortPing.FlatAppearance.BorderSize = 2;
+            btnSortPing.FlatStyle = FlatStyle.Flat;
+            btnSortPing.Font = new Font("Segoe UI", 10F);
+            btnSortPing.ForeColor = Color.White;
             btnSortPing.Location = new Point(23, 197);
             btnSortPing.Name = "btnSortPing";
             btnSortPing.Size = new Size(120, 40);
             btnSortPing.TabIndex = 6;
             btnSortPing.Text = "Sort by Ping";
-            btnSortPing.UseVisualStyleBackColor = true;
+            btnSortPing.UseVisualStyleBackColor = false;
             // 
             // btnClearAllowed
             // 
-            btnClearAllowed.Location = new Point(397, 194);
+            btnClearAllowed.BackColor = Color.FromArgb(40, 40, 40);
+            btnClearAllowed.FlatAppearance.BorderColor = Color.FromArgb(255, 140, 0);
+            btnClearAllowed.FlatAppearance.BorderSize = 2;
+            btnClearAllowed.FlatStyle = FlatStyle.Flat;
+            btnClearAllowed.Font = new Font("Segoe UI", 10F);
+            btnClearAllowed.ForeColor = Color.White;
+            btnClearAllowed.Location = new Point(363, 194);
             btnClearAllowed.Name = "btnClearAllowed";
             btnClearAllowed.Size = new Size(120, 40);
             btnClearAllowed.TabIndex = 5;
             btnClearAllowed.Text = "Clear Allowed";
-            btnClearAllowed.UseVisualStyleBackColor = true;
+            btnClearAllowed.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
             label1.BackColor = Color.Transparent;
+            label1.ForeColor = Color.White;
             label1.Location = new Point(23, 258);
             label1.Name = "label1";
             label1.Size = new Size(256, 48);
@@ -174,6 +214,7 @@
             // 
             // cardPanel1
             // 
+            cardPanel1.BackColor = Color.Transparent;
             cardPanel1.Controls.Add(btnUnblock);
             cardPanel1.Controls.Add(btnRefreshRegions);
             cardPanel1.Controls.Add(grpRecommended);
@@ -183,9 +224,10 @@
             cardPanel1.Controls.Add(chkBlockAllButSelected);
             cardPanel1.Controls.Add(cmbPresets);
             cardPanel1.Controls.Add(btnClearAllowed);
+            cardPanel1.ForeColor = Color.White;
             cardPanel1.Location = new Point(12, 12);
             cardPanel1.Name = "cardPanel1";
-            cardPanel1.Size = new Size(541, 596);
+            cardPanel1.Size = new Size(505, 588);
             cardPanel1.TabIndex = 8;
             // 
             // chkBlockAllButSelected
@@ -194,6 +236,7 @@
             chkBlockAllButSelected.BackColor = Color.Transparent;
             chkBlockAllButSelected.Checked = true;
             chkBlockAllButSelected.CheckState = CheckState.Checked;
+            chkBlockAllButSelected.ForeColor = Color.White;
             chkBlockAllButSelected.Location = new Point(306, 321);
             chkBlockAllButSelected.Name = "chkBlockAllButSelected";
             chkBlockAllButSelected.Size = new Size(153, 19);
@@ -207,9 +250,27 @@
             gridRegions.AllowUserToDeleteRows = false;
             gridRegions.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             gridRegions.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            gridRegions.BackgroundColor = Color.FromArgb(25, 25, 25);
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = Color.FromArgb(50, 50, 50);
+            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle1.ForeColor = Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            gridRegions.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             gridRegions.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             gridRegions.Columns.AddRange(new DataGridViewColumn[] { colAllowed, colCode, colName, colPing });
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = Color.FromArgb(35, 35, 35);
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle2.ForeColor = Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = Color.FromArgb(255, 140, 0);
+            dataGridViewCellStyle2.SelectionForeColor = Color.Black;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
+            gridRegions.DefaultCellStyle = dataGridViewCellStyle2;
             gridRegions.Dock = DockStyle.Right;
+            gridRegions.EnableHeadersVisualStyles = false;
             gridRegions.Location = new Point(583, 0);
             gridRegions.Name = "gridRegions";
             gridRegions.ScrollBars = ScrollBars.Vertical;
@@ -249,11 +310,14 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(64, 64, 64);
+            BackColor = Color.FromArgb(18, 18, 18);
+            BackgroundImage = Properties.Resources.cs2bg_resized;
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1156, 678);
             Controls.Add(gridRegions);
             Controls.Add(cardPanel1);
             Controls.Add(bottomPanel);
+            ForeColor = Color.White;
             FormBorderStyle = FormBorderStyle.Fixed3D;
             Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;

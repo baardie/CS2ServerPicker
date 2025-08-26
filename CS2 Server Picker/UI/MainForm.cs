@@ -590,9 +590,13 @@ namespace CS2_Server_Picker
                 Tag = codes,
                 AutoSize = true,
                 Font = new Font("Segoe UI", 9, FontStyle.Regular),
-                ForeColor = Color.Gray,
-                BackColor = Color.Transparent
+                ForeColor = Color.White,
+                BackColor = Color.Transparent, // Avoid Transparent
             };
+
+            radio.FlatAppearance.BorderSize = 0;
+            radio.FlatAppearance.CheckedBackColor = flowRecommended.BackColor;
+            radio.FlatAppearance.MouseOverBackColor = flowRecommended.BackColor;
 
             radio.CheckedChanged += (_, __) =>
             {
@@ -606,16 +610,6 @@ namespace CS2_Server_Picker
             };
 
             flowRecommended.Controls.Add(radio);
-            _ = AnimateRadioButtonAsync(radio);
-        }
-
-        private async Task AnimateRadioButtonAsync(RadioButton rb)
-        {
-            for (int a = 0; a <= 150; a += 15)
-            {
-                rb.ForeColor = Color.FromArgb(a, Color.Black);
-                await Task.Delay(30).ConfigureAwait(false);
-            }
         }
 
         #endregion

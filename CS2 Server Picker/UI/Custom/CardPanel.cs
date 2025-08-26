@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
@@ -9,31 +10,31 @@ using System.ComponentModel;
 namespace CS2_Server_Picker.UI.Custom
 {
     /// <summary>
-    /// A custom panel with rounded corners, soft shadow, and configurable styling.
+    /// A custom CS2-themed panel with rounded corners, tactical colors, and subtle shadow.
     /// </summary>
     public class CardPanel : Panel
     {
-        // Designer-hidden properties for visual customization
+        // Default CS2-style properties
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
-        public int CornerRadius { get; set; } = 12;
+        public int CornerRadius { get; set; } = 10;
 
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
-        public Color BorderColor { get; set; } = Color.LightGray;
+        public Color BorderColor { get; set; } = Color.FromArgb(255, 255, 128, 0); // CS2 orange accent
 
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
-        public int BorderThickness { get; set; } = 1;
+        public int BorderThickness { get; set; } = 2;
 
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
-        public Color FillColor { get; set; } = Color.White;
+        public Color FillColor { get; set; } = Color.FromArgb(30, 30, 30); // dark steel background
 
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
-        public int ShadowSize { get; set; } = 8;
+        public int ShadowSize { get; set; } = 6;
 
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
-        public Color ShadowColor { get; set; } = Color.FromArgb(60, 0, 0, 0); // semi-transparent black
+        public Color ShadowColor { get; set; } = Color.FromArgb(100, 0, 0, 0); // subtle dark shadow
 
         /// <summary>
-        /// Custom paint logic for rounded card with shadow and border.
+        /// Custom paint logic for CS2-themed rounded card.
         /// </summary>
         protected override void OnPaint(PaintEventArgs e)
         {
@@ -50,19 +51,27 @@ namespace CS2_Server_Picker.UI.Custom
 
             using var path = RoundedRect(rect, CornerRadius);
 
-            // Draw soft shadow using gradient brush
-            using var shadowBrush = new PathGradientBrush(path)
+            // Draw soft shadow behind the panel
+            using (var shadowBrush = new PathGradientBrush(path)
             {
                 CenterColor = ShadowColor,
                 SurroundColors = new[] { Color.Transparent }
-            };
-            g.FillPath(shadowBrush, path);
+            })
+            {
+                g.FillPath(shadowBrush, path);
+            }
 
-            // Draw card fill and border
-            using var brush = new SolidBrush(FillColor);
-            using var pen = new Pen(BorderColor, BorderThickness);
-            g.FillPath(brush, path);
-            g.DrawPath(pen, path);
+            // Fill background
+            using (var brush = new SolidBrush(FillColor))
+            {
+                g.FillPath(brush, path);
+            }
+
+            // Draw CS2 orange border
+            using (var pen = new Pen(BorderColor, BorderThickness))
+            {
+                g.DrawPath(pen, path);
+            }
         }
 
         /// <summary>
