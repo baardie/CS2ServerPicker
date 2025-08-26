@@ -33,11 +33,10 @@ Just extract the `.zip` file and run the `.exe` — simple, fast, and ready to g
 
 ## 🖼️ Screenshots
 
-<img width="1156" height="710" alt="image" src="https://github.com/user-attachments/assets/468a7e84-700f-41b0-ad1e-df71004cfd68" />
+<img width="1157" height="707" alt="image" src="https://github.com/user-attachments/assets/5403f1ac-54ad-4427-8cde-b5ba6b7c5b85" />
+<img width="1167" height="710" alt="image" src="https://github.com/user-attachments/assets/e5d6d594-47e8-4a49-86a2-f8a6324f2a54" />
+<img width="1158" height="714" alt="image" src="https://github.com/user-attachments/assets/ac049ede-bbf7-49e9-b53b-3da4d0f4d98f" />
 
-<img width="557" height="616" alt="image" src="https://github.com/user-attachments/assets/0ad49e18-359e-4dcc-9966-df676aee1d7a" />
-
-<img width="1146" height="698" alt="image" src="https://github.com/user-attachments/assets/ecbde6d9-103d-422e-be4e-10814ef7b4e6" />
 
 ---
 
