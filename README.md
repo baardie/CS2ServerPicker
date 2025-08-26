@@ -3,6 +3,13 @@
 A modern, designer-friendly Windows app for customizing your CS2 server experience.  
 Ping, filter, and firewall Steam Datagram Relay (SDR) regions with intuitive controls, emoji-enhanced feedback, and dynamic recommendations.
 
+![Stars](https://img.shields.io/github/stars/baardie/CS2ServerPicker?style=flat)
+![Forks](https://img.shields.io/github/forks/baardie/CS2ServerPicker?style=flat)
+![Issues](https://img.shields.io/github/issues/baardie/CS2ServerPicker)
+![Last Commit](https://img.shields.io/github/last-commit/baardie/CS2ServerPicker)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/baardie/CS2ServerPicker?style=flat)
+
+
 ## 📥 Want to Download It?
 
 Grab the latest release here:  
