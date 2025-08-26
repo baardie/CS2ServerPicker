@@ -1,4 +1,5 @@
 ﻿using CS2_Server_Picker.Core;
+using CS2_Server_Picker.Helpers;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -200,13 +201,23 @@ namespace CS2_Server_Picker
         {
             try
             {
+
+                string? latestTag = await VersionChecker.GetLatestVersionAsync();
+                string currentVersion = Application.ProductVersion;
+
+                if (VersionChecker.IsNewVersionAvailable(latestTag, currentVersion))
+                {
+                    MessageBox.Show($"A new version ({latestTag}) is available!", "Update Available",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+
                 var regions = await Task.Run(() => RegionDataStore.GetRegionsAsync());
 
                 InitializeRows(regions);
                 BindPresets();
 
                 await PingAllRegionsAsync(regions);
-                await InitializeGeo(); 
+                await InitializeGeo();
             }
             catch (Exception ex)
             {
@@ -286,7 +297,7 @@ namespace CS2_Server_Picker
 
                 var regions = await Task.Run(() => RegionDataStore.GetRegionsAsync());
 
-                InitializeRows(regions); 
+                InitializeRows(regions);
                 await PingAllRegionsAsync(regions);
             }
             catch (Exception ex)
@@ -328,8 +339,8 @@ namespace CS2_Server_Picker
                     BeginInvoke(() =>
                     {
                         row.PingMs = finalPing;
-                        _completedCount++;        
-                        
+                        _completedCount++;
+
                     });
                 }
                 finally
@@ -337,7 +348,7 @@ namespace CS2_Server_Picker
                     semaphore.Release();
                     _pendingUiUpdate = true;
                     Interlocked.Increment(ref completed);
-                    
+
                 }
             });
 
@@ -406,9 +417,9 @@ namespace CS2_Server_Picker
 
             var row = _rows[e.RowIndex];
             row.Allowed = !row.Allowed;
-      
-             gridRegions.InvalidateRow(e.RowIndex);
-             gridRegions.Refresh();
+
+            gridRegions.InvalidateRow(e.RowIndex);
+            gridRegions.Refresh();
         }
 
         private void GridRegions_CellFormatting(object? sender, DataGridViewCellFormattingEventArgs e)
@@ -505,7 +516,7 @@ namespace CS2_Server_Picker
 
         private async Task ClearAllowedAsync()
         {
-          
+
             foreach (var row in _rows)
                 row.Allowed = false;
 
@@ -650,5 +661,46 @@ namespace CS2_Server_Picker
         }
 
         #endregion
+
+        private void buttonDonate_Click(object sender, EventArgs e)
+        {
+            var url = "https://www.paypal.com/donate/?business=96PVNH58EAZXJ&no_recurring=0&item_name=Your+donation+helps+cover+occasional+caffeine-fueled+midnight+sessions%21+%0AThanks+for+being+part+of+the+journey+%F0%9F%92%99&currency_code=GBP";
+
+            try
+            {
+                var psi = new System.Diagnostics.ProcessStartInfo
+                {
+                    FileName = url,
+                    UseShellExecute = true
+                };
+                System.Diagnostics.Process.Start(psi);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Unable to open browser: " + ex.Message, "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void buttonGithub_Click(object sender, EventArgs e)
+        {
+            var url = "https://github.com/baardie/CS2ServerPicker";
+
+            try
+            {
+                var psi = new System.Diagnostics.ProcessStartInfo
+                {
+                    FileName = url,
+                    UseShellExecute = true
+                };
+                System.Diagnostics.Process.Start(psi);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Unable to open browser: " + ex.Message, "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        
+        }
     }
 }

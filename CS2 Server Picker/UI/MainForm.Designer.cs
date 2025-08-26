@@ -41,6 +41,8 @@
             btnClearAllowed = new Button();
             label1 = new Label();
             cardPanel1 = new CS2_Server_Picker.UI.Custom.CardPanel();
+            buttonGithub = new Button();
+            buttonDonate = new Button();
             chkBlockAllButSelected = new CheckBox();
             gridRegions = new DataGridView();
             colAllowed = new DataGridViewCheckBoxColumn();
@@ -78,7 +80,7 @@
             btnUnblock.FlatStyle = FlatStyle.Flat;
             btnUnblock.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
             btnUnblock.ForeColor = Color.White;
-            btnUnblock.Location = new Point(366, 526);
+            btnUnblock.Location = new Point(140, 526);
             btnUnblock.Name = "btnUnblock";
             btnUnblock.Size = new Size(120, 40);
             btnUnblock.TabIndex = 2;
@@ -215,6 +217,8 @@
             // cardPanel1
             // 
             cardPanel1.BackColor = Color.Transparent;
+            cardPanel1.Controls.Add(buttonGithub);
+            cardPanel1.Controls.Add(buttonDonate);
             cardPanel1.Controls.Add(btnUnblock);
             cardPanel1.Controls.Add(btnRefreshRegions);
             cardPanel1.Controls.Add(grpRecommended);
@@ -229,6 +233,39 @@
             cardPanel1.Name = "cardPanel1";
             cardPanel1.Size = new Size(505, 588);
             cardPanel1.TabIndex = 8;
+            // 
+            // buttonGithub
+            // 
+            buttonGithub.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            buttonGithub.BackColor = Color.White;
+            buttonGithub.BackgroundImage = Properties.Resources.GitHub_Logo_ee398b662d42;
+            buttonGithub.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonGithub.FlatAppearance.BorderColor = Color.FromArgb(255, 140, 0);
+            buttonGithub.FlatStyle = FlatStyle.Flat;
+            buttonGithub.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            buttonGithub.ForeColor = Color.White;
+            buttonGithub.Location = new Point(396, 508);
+            buttonGithub.Name = "buttonGithub";
+            buttonGithub.Size = new Size(90, 26);
+            buttonGithub.TabIndex = 10;
+            buttonGithub.UseVisualStyleBackColor = false;
+            buttonGithub.Click += buttonGithub_Click;
+            // 
+            // buttonDonate
+            // 
+            buttonDonate.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            buttonDonate.BackgroundImage = Properties.Resources.pp_logo_100px;
+            buttonDonate.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonDonate.FlatAppearance.BorderColor = Color.FromArgb(255, 140, 0);
+            buttonDonate.FlatStyle = FlatStyle.Flat;
+            buttonDonate.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            buttonDonate.ForeColor = Color.White;
+            buttonDonate.Location = new Point(396, 540);
+            buttonDonate.Name = "buttonDonate";
+            buttonDonate.Size = new Size(90, 26);
+            buttonDonate.TabIndex = 9;
+            buttonDonate.UseVisualStyleBackColor = false;
+            buttonDonate.Click += buttonDonate_Click;
             // 
             // chkBlockAllButSelected
             // 
@@ -351,5 +388,7 @@
         private DataGridViewTextBoxColumn colCode;
         private DataGridViewTextBoxColumn colName;
         private DataGridViewTextBoxColumn colPing;
+        private Button buttonDonate;
+        private Button buttonGithub;
     }
 }

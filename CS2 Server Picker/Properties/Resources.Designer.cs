@@ -69,5 +69,25 @@ namespace CS2_Server_Picker.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GitHub_Logo_ee398b662d42 {
+            get {
+                object obj = ResourceManager.GetObject("GitHub-Logo-ee398b662d42", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pp_logo_100px {
+            get {
+                object obj = ResourceManager.GetObject("pp-logo-100px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

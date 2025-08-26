@@ -9,6 +9,9 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <ApplicationIcon>e1bd06c3f8089e7552aa0552cb387c92.ico</ApplicationIcon>
     <SignAssembly>False</SignAssembly>
+    <FileVersion>v1.0.2</FileVersion>
+    <AssemblyVersion>1.0.2</AssemblyVersion>
+	  <InformationalVersion>1.0.2</InformationalVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
